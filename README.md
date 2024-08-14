@@ -64,7 +64,6 @@ Here you can find examples of how to interact with the dApp, including string ma
   ####  reverseString
 
     ```js
-
   description — submit a string to be reversed.
   param data — {text: string}
    ```
@@ -72,7 +71,6 @@ Here you can find examples of how to interact with the dApp, including string ma
 data sample
 
   ```json
-
   {
       "action":"reverseString", 
       "data":{
@@ -85,11 +83,9 @@ hex sample
 0x7b22616374696f6e223a2272657665727365537472696e67222c202264617461223a7b2274657874223a2268656c6c6f20776f726c64227d7d
 ```
 interact
-
   -  *via `cartesi cli`*, access your terminal in another window and input these instructions below:
 
 ```sh
-
 cartesi send generic \
     --dapp=0xab7528bb862fb57e8a2bcd567a2e929a0be56a5e \
     --chain-id=31337 \
@@ -101,7 +97,6 @@ cartesi send generic \
 ```
 
 ```sh
-
     cast send 0x59b22D57D4f067708AB0c00552767405926dc768 "addInput(address,bytes)" 0xab7528bb862fb57e8a2bcd567a2e929a0be56a5e 0x7b22616374696f6e223a2272657665727365537472696e67222c202264617461223a7b2274657874223a2268656c6c6f20776f726c64227d7d --mnemonic 'test test test test test test test test test test test junk'
 ```
 
@@ -115,7 +110,6 @@ cartesi send generic \
 returned hex sample
 
 ```json
-
   {
       "status": "Accepted",
       "exception_payload": null,
@@ -130,7 +124,6 @@ returned hex sample
 converted payload sample
 
 ```json
-
   {
       "totalCharacters": 32,
       "totalWords": 6,
