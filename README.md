@@ -64,19 +64,19 @@ Here you can find examples of how to interact with the dApp, including string ma
   ####  reverseString
 
     ```js
-  description — submit a string to be reversed.
-  param data — {text: string}
-   ```
+       description — submit a string to be reversed.
+       param data — {text: string}
+    ```
 
 data sample
 
   ```json
-  {
-      "action":"reverseString", 
-      "data":{
-          "text":"hello world"
-      }
-  } 
+    {
+        "action":"reverseString", 
+        "data":{
+            "text":"hello world"
+        }
+    } 
   ```
 hex sample
 ```
