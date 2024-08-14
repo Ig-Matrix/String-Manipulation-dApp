@@ -66,16 +66,17 @@ async function handle_inspect(data) {
    const query = hex2str(payload);
    let responseObject = {};
 
-   if (query === "stats") {
+   if (query === "stats") { //FOR QUERIES EQUAL TO "stats"
       responseObject = JSON.stringify({
          totalCharacters,
          totalWords,
          longestString,
       });
    } else {
-      responseObject = "Invalid query";
+      responseObject = "Invalid query"; // FOR UNKNOWN QUERIES
    }
 
+   // SENDING REPORT RESPONSE TO ROLLUP SERVER
    const report_req = await fetch(rollup_server + "/report", {
       method: "POST",
       headers: {
@@ -94,6 +95,7 @@ var handlers = {
 
 var finish = { status: "accept" };
 
+// MAIN LOOP TO CONTINUE HANDLE REQUESTS FROM THE SERVER
 (async () => {
    while (true) {
       const finish_req = await fetch(rollup_server + "/finish", {
