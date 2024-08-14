@@ -61,12 +61,12 @@ Make sure you have the following packages installed on your machine:
 Here you can find examples of how to interact with the dApp, including string manipulation and inspecting the tracked statistics.
 ### Advanced Handlers
 
-  ####  reverseString
+*  ####  reverseString
 
-    ```js
-       description — submit a string to be reversed.
-       param data — {text: string}
-    ```
+  ```js
+      description — submit a string to be reversed.
+      param data — {text: string}
+  ```
 
 data sample
 
