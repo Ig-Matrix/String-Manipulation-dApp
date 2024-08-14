@@ -102,7 +102,7 @@ cartesi send generic \
 
 ### Inspect Handlers
 
-  ####  getStatistics
+*  ####  getStatistics
 
    ``` js
   description — retrieve current statistics for processed text.
